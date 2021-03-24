@@ -49,7 +49,7 @@ import { useRouter } from 'next/router';
 import { locales, languageNames } from '../translations/config';
 import TranslateIcon from '@material-ui/icons/Translate';
 import Tooltip from '@material-ui/core/Tooltip';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import SendIcon from '@material-ui/icons/Send';
@@ -274,17 +274,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     if (!darkState) {
       return (
       <Link href="/[lang]/" as={`/${locale}/`} passHref>
-        <ButtonBase>
-        <img src='/Elavon_logo_white.svg' alt='Elavon' height="36"/>
-        </ButtonBase>
+        <Button size="large">Bryce Watson</Button>
       </Link>
       );
     } else {
     return (
       <Link href="/[lang]/" as={`/${locale}/`} passHref>
-        <ButtonBase>
-        <img src='/Elavon_logo.svg' alt='Elavon' height="36"/>
-        </ButtonBase>
+        <Button size="large">Bryce Watson</Button>
       </Link>
       );
     }
