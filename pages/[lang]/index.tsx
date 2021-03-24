@@ -1,19 +1,14 @@
 
 import Head from 'next/head';
-import React, {useContext} from 'react';
+import React from 'react';
 import {
   Typography,
 } from '@material-ui/core';
-import { Media, MediaContextProvider } from "../../utils/media";
+import { MediaContextProvider } from "../../utils/media";
 import withLocale from '../../hocs/withLocale';
-import StarterBundle from '../../components/StarterBundle';
-import StandardBundle from '../../components/StandardBundle';
-import useTranslation from '../../hooks/useTranslation';
-import PremiumBundle from '../../components/PremiumBundle';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import ThemeContext from '../../components/Theme';
-import { Button, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import Image from 'next/image'
 import ButtonBase from '@material-ui/core/ButtonBase';
 
@@ -80,12 +75,14 @@ function Home() {
                         <Typography variant='body2'>Helping developers understand our systems</Typography>
                       </Grid>
                       <Grid item>
-                      <Image
-                        src="/Thumbnail1.png"
-                        alt="Device mockup for developer documentation website"
-                        width={imageSize}
-                        height={imageSize}
-                      />
+                        <ButtonBase>
+                          <Image
+                          src="/Thumbnail1.png"
+                          alt="Device mockup for developer documentation website"
+                          width={imageSize}
+                          height={imageSize}
+                        />
+                        </ButtonBase>
                       </Grid>
                     </Grid>
                   </Grid>
@@ -101,12 +98,14 @@ function Home() {
                       <Typography variant='body2'>Monitoring critical infrastructure for transparency</Typography>
                     </Grid>
                     <Grid item>
-                    <Image
-                      src="/Thumbnail2.png"
-                      alt="Device mockup for system outage website"
-                      width={imageSize}
-                      height={imageSize}
-                    />
+                      <ButtonBase>
+                        <Image
+                        src="/Thumbnail2.png"
+                        alt="Device mockup for system outage website"
+                        width={imageSize}
+                        height={imageSize}
+                      />
+                      </ButtonBase>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -124,12 +123,14 @@ function Home() {
                         <Typography variant='body2' style={{maxWidth:300}}>Monitoring air quality for the CDC</Typography>
                       </Grid>
                       <Grid item>
-                      <Image
-                        src="/Thumbnail3.png"
-                        alt="Device mockup for air pollution tracker"
-                        width={imageSize}
-                        height={imageSize}
-                      />
+                        <ButtonBase>
+                          <Image
+                          src="/Thumbnail3.png"
+                          alt="Device mockup for air pollution tracker"
+                          width={imageSize}
+                          height={imageSize}
+                        />
+                        </ButtonBase>
                       </Grid>
                     </Grid>
                   </Grid>
@@ -145,12 +146,14 @@ function Home() {
                       <Typography variant='body2'>Tracking API maturity across an organization</Typography>
                     </Grid>
                     <Grid item>
-                    <Image
-                      src="/Thumbnail4.png"
-                      alt="Device mockup for API Strategy website"
-                      width={imageSize}
-                      height={imageSize}
-                    />
+                      <ButtonBase>
+                        <Image
+                        src="/Thumbnail4.png"
+                        alt="Device mockup for API Strategy website"
+                        width={imageSize}
+                        height={imageSize}
+                      />
+                      </ButtonBase>
                     </Grid>
                   </Grid>
                 </Grid>
