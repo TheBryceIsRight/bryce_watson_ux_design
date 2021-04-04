@@ -405,8 +405,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       open={isNotificationsMenuOpen}
       onClose={handleNotificationsMenuCLose}
       >
-      <MenuItem>
-      I&apos;m still working on this :)
+      <MenuItem >
+          <ListItemIcon>
+          <LinkedInIcon />
+          </ListItemIcon>
+          <Link href="https://www.linkedin.com/in/bryce-watson-gatech/">
+        <Typography variant="subtitle1">
+        LinkedIn profile
+        </Typography>
+      </Link>
+   
       </MenuItem>
       </Menu>
   );
