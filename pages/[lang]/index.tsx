@@ -39,6 +39,7 @@ function Home() {
 
   const classes = useStyles();
   const imageSize = 310;
+  const leftColumnWidth = 300;
 
     return <React.Fragment>
       <Head>
@@ -49,7 +50,7 @@ function Home() {
       <MediaContextProvider>
       <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>
-              <Typography variant="h4" style={{minWidth:"300px"}}>Hi there! I&apos;m Bryce.</Typography>
+              <Typography variant="h4" style={{minWidth:leftColumnWidth}}>Hi there! I&apos;m Bryce.</Typography>
             </Grid>
             <Grid item>
               <Typography variant="h5" style={{maxWidth:"700px"}}>I&apos;m a product designer at Elavon and a graduate of the Computer Science program at Georgia Tech. </Typography>
@@ -59,7 +60,7 @@ function Home() {
           </Box> 
           <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>
-              <Typography variant="h4" style={{minWidth:"300px"}}>My Projects</Typography>
+              <Typography variant="h4" style={{minWidth:leftColumnWidth}}>My Projects</Typography>
             </Grid>
             <Grid item style={{maxWidth:"700px"}}>
               <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} > 

@@ -8,7 +8,7 @@ import '../styles/mapbox-gl.css';
 import '../styles/global.css';
 import { Media, MediaContextProvider } from "../utils/media";
 
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Link from 'next/link'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import {
@@ -32,7 +32,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert'; 
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
@@ -407,7 +406,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       onClose={handleNotificationsMenuCLose}
       >
       <MenuItem>
-      All notifications are read!
+      I&apos;m still working on this :)
       </MenuItem>
       </Menu>
   );
@@ -433,9 +432,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       </MenuItem>
       <MenuItem onClick={handleNotificationMenuOpen}>
       <ListItem>
-          <ListItemIcon><NotificationsIcon />
+          <ListItemIcon><LinkedInIcon />
           </ListItemIcon>
-          <ListItemText primary={t("notifications")}/>
+          <ListItemText primary="LinkedIn"/>
       </ListItem>
       </MenuItem>
       <MenuItem onClick={handleThemeChange} >
@@ -659,16 +658,16 @@ function MyApp({ Component, pageProps }: AppProps) {
                   </Tooltip>
                 </div>
                 <div className={classes.sectionDesktop}>
-                <Tooltip title={t("notifications")}>
+                <Tooltip title="LinkedIn">
                   <IconButton
                     edge="end"
-                    aria-label={t("notifications")}
+                    aria-label="LinkedIn"
                     aria-controls={notificationsMenuId}
                     aria-haspopup="true"
                     onClick={handleNotificationMenuOpen}
                     color="primary"
                   >
-                    <NotificationsIcon />
+                    <LinkedInIcon />
                   </IconButton>
                 </Tooltip>
                 </div>
