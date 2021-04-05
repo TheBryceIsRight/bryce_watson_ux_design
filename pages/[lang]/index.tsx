@@ -13,6 +13,8 @@ import Image from 'next/image'
 import ButtonBase from '@material-ui/core/ButtonBase';
 import useTranslation from '../../hooks/useTranslation';
 import Link from 'next/link';
+import BackToTop from "../../components/BackToTop";
+
 
 
 
@@ -53,6 +55,7 @@ function Home() {
         Bryce Watson&apos;s Portfolio
         </title>
       </Head>
+      <BackToTop/>
       <MediaContextProvider>
       <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>

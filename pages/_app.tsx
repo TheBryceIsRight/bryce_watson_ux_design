@@ -209,19 +209,19 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  const [notificationsAnchorEl, setNotificationsAnchorEl] = React.useState(null);
+  // const [notificationsAnchorEl, setNotificationsAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-  const isNotificationsMenuOpen = Boolean(notificationsAnchorEl);
+  // const isNotificationsMenuOpen = Boolean(notificationsAnchorEl);
 
   const handleProfileMenuOpen = (event: any) => {
       setAnchorEl(event.currentTarget);
   };
 
-  const handleNotificationMenuOpen = (event: any) => {
-    setNotificationsAnchorEl(event.currentTarget);
-  };
+  // const handleNotificationMenuOpen = (event: any) => {
+  //   setNotificationsAnchorEl(event.currentTarget);
+  // };
 
 
   const handleMobileMenuClose = () => {
@@ -233,9 +233,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       handleMobileMenuClose();
   };
 
-  const handleNotificationsMenuCLose  = () => {
-    setNotificationsAnchorEl(null);
-  };
+  // const handleNotificationsMenuCLose  = () => {
+  //   setNotificationsAnchorEl(null);
+  // };
 
   const handleMobileMenuOpen = (event: any) => {
       setMobileMoreAnchorEl(event.currentTarget);
@@ -394,30 +394,30 @@ function MyApp({ Component, pageProps }: AppProps) {
   </React.Fragment> 
   );
 
-  const notificationsMenuId = 'notifications-menu';
-  const renderNotifcationsMenu = (
-      <Menu
-      anchorEl={notificationsAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={notificationsMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isNotificationsMenuOpen}
-      onClose={handleNotificationsMenuCLose}
-      >
-      <MenuItem >
-          <ListItemIcon>
-          <LinkedInIcon />
-          </ListItemIcon>
-          <Link href="https://www.linkedin.com/in/bryce-watson-gatech/">
-        <Typography variant="subtitle1">
-        LinkedIn profile
-        </Typography>
-      </Link>
+  // const notificationsMenuId = 'notifications-menu';
+  // const renderNotifcationsMenu = (
+  //     <Menu
+  //     anchorEl={notificationsAnchorEl}
+  //     anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+  //     id={notificationsMenuId}
+  //     keepMounted
+  //     transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+  //     open={isNotificationsMenuOpen}
+  //     onClose={handleNotificationsMenuCLose}
+  //     >
+  //     <MenuItem >
+  //         <ListItemIcon>
+  //         <LinkedInIcon />
+  //         </ListItemIcon>
+  //         <Link href="https://www.linkedin.com/in/bryce-watson-gatech/">
+  //       <Typography variant="subtitle1">
+  //       LinkedIn profile
+  //       </Typography>
+  //     </Link>
    
-      </MenuItem>
-      </Menu>
-  );
+  //     </MenuItem>
+  //     </Menu>
+  // );
 
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
@@ -438,12 +438,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           <ListItemText primary={t("profile")} />
       </ListItem>
       </MenuItem>
-      <MenuItem onClick={handleNotificationMenuOpen}>
+      <MenuItem>
+      <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" passHref>
       <ListItem>
           <ListItemIcon><LinkedInIcon />
           </ListItemIcon>
           <ListItemText primary="LinkedIn"/>
       </ListItem>
+      </Link>
       </MenuItem>
       <MenuItem onClick={handleThemeChange} >
       <ListItem>
@@ -666,18 +668,20 @@ function MyApp({ Component, pageProps }: AppProps) {
                   </Tooltip>
                 </div>
                 <div className={classes.sectionDesktop}>
+                <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" passHref>
+
                 <Tooltip title="LinkedIn">
                   <IconButton
                     edge="end"
                     aria-label="LinkedIn"
-                    aria-controls={notificationsMenuId}
-                    aria-haspopup="true"
-                    onClick={handleNotificationMenuOpen}
+                    aria-haspopup="false"
                     color="primary"
                   >
                     <LinkedInIcon />
                   </IconButton>
                 </Tooltip>
+                </Link>
+
                 </div>
                 
   
@@ -711,7 +715,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             <br/>
             {renderMobileMenu}
             {renderMenu}
-            {renderNotifcationsMenu}
             {renderLanguageMenu}
           </div>
     );

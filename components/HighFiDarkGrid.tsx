@@ -143,7 +143,7 @@ export default function HighFiDarkGrid(_props:any)
         </Media>
 
         <Media at='xl'>
-        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:4000}}>
+        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:4000}} alignItems="center">
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -152,7 +152,7 @@ export default function HighFiDarkGrid(_props:any)
 
 
         <Media greaterThanOrEqual='el'>
-        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:2900}}>
+        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:2900}} alignItems="center">
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }

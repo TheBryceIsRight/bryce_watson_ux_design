@@ -15,6 +15,7 @@ import Image from 'next/image'
 import WireframeGrid from '../../components/WireframeGrid';
 import HighFidelityGrid from "../../components/HighFidelityGrid";
 import HighFiDarkGrid from "../../components/HighFiDarkGrid";
+import BackToTop from "../../components/BackToTop";
 
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
 {/*
@@ -63,6 +64,7 @@ function DevPortal() {
         </title>
       </Head>
       <MediaContextProvider>
+      <BackToTop/>
       <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>
               <Typography variant="h4" style={{maxWidth:leftColumnWidth}}>Developer Documentation Redesign</Typography>
@@ -323,6 +325,7 @@ function DevPortal() {
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Thank you for your time!</Typography>
             </Grid>
+            
       </MediaContextProvider>
     </React.Fragment> 
 }
