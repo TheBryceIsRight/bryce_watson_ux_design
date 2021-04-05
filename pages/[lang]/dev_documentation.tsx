@@ -12,8 +12,9 @@ import { Box } from '@material-ui/core';
 import Image from 'next/image'
 // import ButtonBase from '@material-ui/core/ButtonBase';
 // import useTranslation from '../../hooks/useTranslation';
-import Example from '../../components/Example';
-
+import WireframeGrid from '../../components/WireframeGrid';
+import HighFidelityGrid from "../../components/HighFidelityGrid";
+import HighFiDarkGrid from "../../components/HighFiDarkGrid";
 
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
 {/*
@@ -228,7 +229,99 @@ function DevPortal() {
                 </Box> 
             </Grid>
             <Grid item>
-                <Example></Example>
+                <WireframeGrid></WireframeGrid>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>High Fidelity Wireframes</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <HighFidelityGrid></HighFidelityGrid>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>   
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Dark Mode</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <HighFiDarkGrid></HighFiDarkGrid>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Takeaways</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="h4" style={{maxWidth:maxWidthText}}>Communication is key</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>We tried several methods of design hand off, and eventually settled on a two lane hand off stream - Zeplin for business or marketing folks that just wanted a preview, and a Bitbucket based Sketch repo for the developers to see a responsive view of the designs. Once the output streams were settled, there weren’t any kinks in the hand off process.</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="h4" style={{maxWidth:maxWidthText}}>Flexibility is a requirement</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>There were times when I was coordinating the two different sites - in the EU and North America - where requirements would come down and no one could say where they came from. Often times they were from a EU stakeholder I had never met, but you can’t let a little variety ruin your mojo. I worked with stakeholders on calls to make sure that the EU team was satisfied, even if it meant somewhat splintering the designs from each other in the short run.</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="h4" style={{maxWidth:maxWidthText}}>Good teamwork is essential</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>Often the blockers on this project were caused by developers trying to be Superman - only to end in sliding schedules. The best results come from Development and UX working in tandem.</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Thank you for your time!</Typography>
             </Grid>
       </MediaContextProvider>
     </React.Fragment> 
