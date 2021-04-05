@@ -11,6 +11,10 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import Image from 'next/image'
 import ButtonBase from '@material-ui/core/ButtonBase';
+import useTranslation from '../../hooks/useTranslation';
+import Link from 'next/link';
+
+
 
 
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
@@ -40,6 +44,8 @@ function Home() {
   const classes = useStyles();
   const imageSize = 310;
   const leftColumnWidth = 300;
+  const { locale } = useTranslation();
+
 
     return <React.Fragment>
       <Head>
@@ -77,12 +83,13 @@ function Home() {
                       </Grid>
                       <Grid item>
                         <ButtonBase>
+                        <Link href="/[lang]/dev_documentation" as={`/${locale}/dev_documentation`} passHref >
                           <Image
                           src="/Thumbnail1.png"
                           alt="Device mockup for developer documentation website"
                           width={imageSize}
                           height={imageSize}
-                        />
+                        /></Link>
                         </ButtonBase>
                       </Grid>
                     </Grid>
