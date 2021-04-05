@@ -91,7 +91,7 @@ export default function HighFiDarkGrid(_props:any)
         {
             name: "User Profile",
             description: "Basic user email and phone number",
-            filepath: "/hifi_dark_08.svg",
+            filepath: "/hifi_dark_07.svg",
             alt: "Low Fidelity Mockup of Dev Portal API Category Details screen",
             height: 1720,
             width: 1440,
