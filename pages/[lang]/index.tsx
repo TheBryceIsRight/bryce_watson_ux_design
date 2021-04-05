@@ -48,7 +48,6 @@ function Home() {
   const leftColumnWidth = 300;
   const { locale } = useTranslation();
 
-
     return <React.Fragment>
       <Head>
         <title>
@@ -85,7 +84,7 @@ function Home() {
                         <Typography variant='body2'>Helping developers understand our systems</Typography>
                       </Grid>
                       <Grid item>
-                        <ButtonBase>
+                        <ButtonBase >
                         <Link href="/[lang]/dev_documentation" as={`/${locale}/dev_documentation`} passHref >
                           <Image
                           src="/Thumbnail1.png"

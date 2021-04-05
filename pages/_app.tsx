@@ -55,7 +55,7 @@ import SendIcon from '@material-ui/icons/Send';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import ThreeDRotationIcon from '@material-ui/icons/ThreeDRotation';
-
+import Status from "../components/Status";
 
 
 
@@ -162,25 +162,25 @@ function MyApp({ Component, pageProps }: AppProps) {
   const containerSmall = {
     maxWidth: '36rem',
     padding: '0 1rem',
-    margin: '3rem auto 6rem'
+    margin: '0 auto 6rem'
   };
 
   const containerMedium = {
     maxWidth: '45rem',
     padding: '0 1rem',
-    margin: '3rem auto 6rem'
+    margin: '0 auto 6rem'
   };
 
   const containerLarge = {
     maxWidth: '56rem',
     padding: '0 1rem',
-    margin: '3rem auto 6rem'
+    margin: '0 auto 6rem'
   };
 
   const containerHuge = {
     maxWidth: '72rem',
     padding: '0 1rem',
-    margin: '3rem auto 6rem'
+    margin: '0 auto 6rem'
   };
 
   const [isMounted, setIsMounted] = useState(false);
@@ -724,10 +724,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
   <ThemeContext.Provider value={themeContext.switch}>
   <MediaContextProvider>
+    <Status/>
   <Media at="sm">
   <div style={containerSmall} >
     <ThemeProvider theme={theme}>
         <CssBaseline />
+        
         <nav role='navigation'>
         <NavigationBar/>
         </nav>
