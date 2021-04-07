@@ -91,7 +91,7 @@ function Project(props) {
 
         const media = (
             <Grid item xs={12 / totalItems} key={item.Name}>
-                <Card style={{minWidth:"75%"}}>
+                <Card >
                     
                 <CardHeader
                     title={item.Name}
