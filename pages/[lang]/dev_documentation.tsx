@@ -206,7 +206,9 @@ function DevPortal() {
             </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
-                </Box> 
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
             </Grid>
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Style Guide</Typography>
@@ -272,7 +274,9 @@ function DevPortal() {
             </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
-                </Box> 
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
             </Grid>
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Refined Wireframes</Typography>
@@ -315,6 +319,24 @@ function DevPortal() {
             </Grid>
             <Grid item>
                 <HighFiDarkGrid></HighFiDarkGrid>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mockups</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+                <div style={{borderRadius: 5, width: "100%", height:700, overflow: "hidden"}}>
+                <iframe title="iPhone 8 Dev Portal Mockup" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOT5w89thotQdKVT5D02guR%2FPortfolio%3Fnode-id%3D33%253A2050%26viewport%3D1133%252C1457%252C0.475723534822464%26scaling%3Dscale-down%26page-id%3D33%253A2049" allowFullScreen></iframe>
+                </div>
             </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
