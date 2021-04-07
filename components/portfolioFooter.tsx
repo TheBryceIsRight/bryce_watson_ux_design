@@ -27,7 +27,7 @@ createStyles({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   title: {
     display: 'none',
@@ -151,9 +151,7 @@ export default function PortfolioFooter() {
       <AppBar position="static">
         <Toolbar>
           <CopyrightIcon className={classes.menuButton} color="inherit" aria-label="copyright"/>
-          <Typography variant="h6" className={classes.title}>
-          {(new Date().getFullYear())} Designed and coded by Bryce Watson
-          </Typography>
+          <Typography variant="h6" className={classes.title}>{(new Date().getFullYear())} Designed and coded by Bryce Watson</Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
           <Tooltip title={"Email"}>

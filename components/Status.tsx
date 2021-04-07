@@ -38,7 +38,7 @@ export default function StatusBar() {
   
   return (
     <div className={classes.root}>
-      <LinearProgress variant="determinate" value={progress} />
+      <LinearProgress variant="determinate" value={progress} aria-label={"Linear progress bar"} />
     </div>
   );
 }
