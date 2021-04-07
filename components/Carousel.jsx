@@ -90,7 +90,7 @@ function Project(props) {
         const item = props.item.Items[i];
 
         const media = (
-            <Grid item xs={12 / totalItems} key={item.Name}>
+            <Grid item key={item.Name}>
                 <Card >
                     
                 <CardHeader
@@ -102,7 +102,7 @@ function Project(props) {
                     className="Media"
                     image={item.Image}
                     title={item.Name}
-                    style={{minHeight:350}}
+                    style={{minHeight:350, minWidth:370}}
                 >
                 </CardMedia>
                 </CardActionArea>
