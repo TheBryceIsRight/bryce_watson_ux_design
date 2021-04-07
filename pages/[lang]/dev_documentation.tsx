@@ -209,6 +209,27 @@ function DevPortal() {
                 </Box> 
             </Grid>
             <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Style Guide</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <Image
+                    src="/style_guide_01.svg"
+                    alt="Colors and typography for the Developer Portal"
+                    width={1325}
+                    height={1078}
+                    />
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Baseline User Research</Typography>
             </Grid>
             <Grid item>
