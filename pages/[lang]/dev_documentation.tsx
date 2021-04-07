@@ -47,8 +47,6 @@ function DevPortal() {
   const leftColumnWidth = 300;
   const maxWidthText = 800;
   const introWidthText = 600;
-  const imageHeight = 896;
-  const imageWidth = 1442;
   const boxHeight = 70;
   const smallerBoxHeight = 50;
   const vSmallBoxHeight = 15;
@@ -100,13 +98,9 @@ function DevPortal() {
                 <Image
                     src="/Hero.svg"
                     alt="Device mockup for system outage website"
-                    width={imageWidth}
-                    height={imageHeight}
+                    width={1325}
+                    height={1028}
                     />
-            </Grid>
-            <Grid item>
-                <Box style={{minHeight: boxHeight}}>
-                </Box> 
             </Grid>
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>How do we make our documentation as helpful as possible?</Typography>
@@ -254,8 +248,8 @@ function DevPortal() {
                 <Image
                     src="/tasks.png"
                     alt="User Journey for the Developer Portal"
-                    width={976}
-                    height={732.89}
+                    width={1110}
+                    height={833.51}
                     />
             </Grid>
             <Grid item>
