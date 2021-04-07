@@ -16,6 +16,7 @@ import WireframeGrid from '../../components/WireframeGrid';
 import HighFidelityGrid from "../../components/HighFidelityGrid";
 import HighFiDarkGrid from "../../components/HighFiDarkGrid";
 import BackToTop from "../../components/BackToTop";
+import Carousel from "../../components/Carousel";
 
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
 {/*
@@ -165,6 +166,23 @@ function DevPortal() {
             <Grid item>
             <Typography variant="body1" style={{maxWidth:maxWidthText}}>We sought to optimize several processes that currently require a phone call, from scoping a customer’s payment integration to getting test card data to run dummy transactions.</Typography>
             </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Personas</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <Carousel/>
+            </Grid>
+
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
                 </Box>

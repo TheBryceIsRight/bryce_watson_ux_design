@@ -9,7 +9,7 @@ import { Media, MediaContextProvider } from "../utils/media";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 345,
+        maxWidth: 345,
     },
     media: {
       paddingTop: '56.25%', // 16:9
@@ -168,7 +168,7 @@ function Item(props:any)
 
     return (
         <Grid item>
-            <Card className={classes.root} >
+            <Card className={classes.root}>
             <CardHeader
                 title={props.item.name}
                 subheader={props.item.description}

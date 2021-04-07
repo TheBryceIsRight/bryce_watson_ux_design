@@ -25,6 +25,7 @@
     "@react-three/drei": "^2.2.13",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-syntax-highlighter": "^13.5.0",
+    "auto-bind": "^4.0.0",
     "csstype": "^3.0.2",
     "date-fns": "^2.15.0",
     "formik": "^2.1.5",
