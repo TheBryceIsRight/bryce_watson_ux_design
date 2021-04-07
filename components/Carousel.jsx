@@ -4,9 +4,9 @@ import autoBind from "auto-bind"
 
 import {
     Card,
-    CardContent,
     CardMedia,
     CardHeader,
+    CardActionArea,
     Typography,
     Grid,
     Checkbox,
@@ -17,65 +17,125 @@ import {
     Slider
 } from '@material-ui/core';
 
-function Banner(props) {
-    if (props.newProp) console.log(props.newProp)
-    const contentPosition = props.contentPosition ? props.contentPosition : "left"
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import Image from 'next/image'
+
+
+const styles = (theme) => ({
+    root: {
+      margin: 0,
+      padding: theme.spacing(2),
+    },
+    closeButton: {
+      position: 'absolute',
+      right: theme.spacing(1),
+      top: theme.spacing(1),
+      color: theme.palette.grey[500],
+    },
+  });
+
+  const DialogTitle = withStyles(styles)((props) => {
+    const { children, classes, onClose, ...other } = props;
+    return (
+      <MuiDialogTitle disableTypography className={classes.root} {...other}>
+        <Typography variant="h6">{children}</Typography>
+        {onClose ? (
+          <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
+            <CloseIcon />
+          </IconButton>
+        ) : null}
+      </MuiDialogTitle>
+    );
+  });
+  
+  const DialogContent = withStyles((theme) => ({
+    root: {
+      padding: theme.spacing(2),
+    },
+  }))(MuiDialogContent);
+  
+  const DialogActions = withStyles((theme) => ({
+    root: {
+      margin: 0,
+      padding: theme.spacing(1),
+    },
+  }))(MuiDialogActions);
+
+
+
+
+function Project(props) {
+    const [open, setOpen] = React.useState(false);
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+    const items = [];
     const totalItems = props.length ? props.length : 3;
     const mediaLength = totalItems - 1;
 
-    const items = [];
-    const content = (
-        <Grid item xs={12 / totalItems} key="content">
-            <Card>
-            <CardHeader
-                    title={props.item.Name}
-                    subheader={props.item.Caption}
-                />
-            <CardContent className="Content" >
-                <Typography variant="h6">Persona research consisted of primarily of stakeholder interviews. In the future I&apos;d like to have had more extensive user research as a basis for the project.</Typography>
-            </CardContent>
-            </Card>
-            
-        </Grid>
-    )
 
-
-    for (let i = 0; i < mediaLength; i++) {
+    for (let i = 0; i < mediaLength-1; i++) {
         const item = props.item.Items[i];
 
         const media = (
             <Grid item xs={12 / totalItems} key={item.Name}>
-                <Card>
+                <Card style={{minWidth:"75%"}}>
+                    
                 <CardHeader
                     title={item.Name}
                     subheader={item.Description}
                 />
+                <CardActionArea onClick={handleClickOpen}>
                 <CardMedia
                     className="Media"
                     image={item.Image}
                     title={item.Name}
-                    style={{minHeight:350, minWdith:350}}
+                    style={{minHeight:350}}
                 >
-                </CardMedia> 
+                </CardMedia>
+                </CardActionArea>
+                <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+                    <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                        {item.Name}
+                    </DialogTitle>
+                    <DialogContent dividers>
+                        <Image
+                        src={item.Image}
+                        alt="Persona"
+                        width={800}
+                        height={700}
+                        />
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={handleClose} color="primary">
+                        Close 
+                        </Button>
+                    </DialogActions>
+                    </Dialog>
                 </Card>
+                
             </Grid>
         )
 
         items.push(media);
     }
 
-    if (contentPosition === "left") {
-        items.unshift(content);
-    } else if (contentPosition === "right") {
-        items.push(content);
-    } else if (contentPosition === "middle") {
-        items.splice(items.length / 2, 0, content);
-    }
-
     return (
-            <Grid container spacing={2} className="BannerGrid">
-                {items}
-            </Grid>
+        <Grid container spacing={2} justify="center">
+            {items}
+        </Grid>
     )
 }
 
@@ -89,6 +149,12 @@ const items = [
                 Image: "/persona_01.png",
                 Description: "Front-end developer",
             },
+        ]
+    },
+    {
+        Name: "Personas",        
+        contentPosition: "left",
+        Items: [
             {
                 Name: "Sami",
                 Image: "/persona_02.png",
@@ -105,7 +171,13 @@ const items = [
                 Name: "Olivia",
                 Image: "/persona_03.png",
                 Description: "Developer Manager",
-            },
+            }
+        ]
+    },
+    {
+        Name: "Personas",
+        contentPosition: "left",
+        Items: [
             {
                 Name: "Sophia",
                 Image: "/persona_04.png",
@@ -115,6 +187,7 @@ const items = [
     }
 ]
 
+
 class BannerExample extends React.Component {
     constructor(props) {
         super(props);
@@ -123,7 +196,7 @@ class BannerExample extends React.Component {
             autoPlay: true,
             animation: "fade",
             indicators: true,
-            timeout: 1500,
+            timeout: 800,
             navButtonsAlwaysVisible: false,
             navButtonsAlwaysInvisible: false,
             cycleNavigation: true
@@ -197,7 +270,7 @@ class BannerExample extends React.Component {
                 >
                     {
                         items.map((item, index) => {
-                            return <Banner item={item} key={index} contentPosition={item.contentPosition} />
+                            return <Project item={item} key={index} />
                         })
                     }
                 </Carousel>
@@ -255,7 +328,7 @@ class BannerExample extends React.Component {
                                 Animation Duration (Timeout) in ms
                             </Typography>
                             <Slider
-                                defaultValue={1500}
+                                defaultValue={800}
                                 getAriaValueText={() => `${this.state.timeout}ms`}
                                 aria-labelledby="discrete-slider"
                                 valueLabelDisplay="auto"
