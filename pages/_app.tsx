@@ -56,7 +56,7 @@ import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import ThreeDRotationIcon from '@material-ui/icons/ThreeDRotation';
 import Status from "../components/Status";
-
+import NewFooter from "../components/portfolioFooter";
 
 
 const themeContext = {
@@ -737,8 +737,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         {isMounted && <Component {...pageProps} />}
         <br/>
         </main>
-        <div role='contentinfo'>
-        </div>
+        <footer>
+        <NewFooter/>
+        </footer>
     </ThemeProvider>
     </div>
     </Media>
@@ -753,8 +754,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           {isMounted && <Component {...pageProps} />}
           <br/>
           </main>
-          <div role='contentinfo'>
-          </div>
+          <footer>
+          <NewFooter/>
+          </footer>
       </ThemeProvider>
       </div>
     </Media>
@@ -769,6 +771,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             {isMounted && <Component {...pageProps} />}
             <br/>
             </main>
+            <footer>
+            <NewFooter/>
+            </footer>
 
         </ThemeProvider>
       </div>
@@ -784,6 +789,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             {isMounted && <Component {...pageProps} />}
             <br/>
             </main>
+            <footer>
+            <NewFooter/>
+            </footer>
 
         </ThemeProvider>
       </div>
@@ -799,6 +807,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             {isMounted && <Component {...pageProps} />}
             <br/>
             </main>
+            <footer>
+            <NewFooter/>
+            </footer>
             
         </ThemeProvider>
       </div>
