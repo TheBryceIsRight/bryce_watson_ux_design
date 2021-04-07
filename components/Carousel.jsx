@@ -121,7 +121,7 @@ class BannerExample extends React.Component {
             autoPlay: true,
             animation: "fade",
             indicators: true,
-            timeout: 500,
+            timeout: 1500,
             navButtonsAlwaysVisible: false,
             navButtonsAlwaysInvisible: false,
             cycleNavigation: true
@@ -253,14 +253,14 @@ class BannerExample extends React.Component {
                                 Animation Duration (Timeout) in ms
                             </Typography>
                             <Slider
-                                defaultValue={500}
+                                defaultValue={1500}
                                 getAriaValueText={() => `${this.state.timeout}ms`}
                                 aria-labelledby="discrete-slider"
                                 valueLabelDisplay="auto"
                                 step={100}
                                 marks
                                 min={100}
-                                max={2000}
+                                max={2500}
                                 onChange={this.changeTimeout}
                             />
                         </div>
