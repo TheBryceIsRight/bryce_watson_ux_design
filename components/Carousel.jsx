@@ -26,6 +26,7 @@ function Banner(props) {
     const items = [];
     const content = (
         <Grid item xs={12 / totalItems} key="content">
+            <Card>
             <CardHeader
                     title={props.item.Name}
                     subheader={props.item.Caption}
@@ -33,6 +34,8 @@ function Banner(props) {
             <CardContent className="Content" >
                 <Typography variant="h6">Persona research consisted of primarily of stakeholder interviews. In the future I&apos;d like to have had more extensive user research as a basis for the project.</Typography>
             </CardContent>
+            </Card>
+            
         </Grid>
     )
 
@@ -42,6 +45,7 @@ function Banner(props) {
 
         const media = (
             <Grid item xs={12 / totalItems} key={item.Name}>
+                <Card>
                 <CardHeader
                     title={item.Name}
                     subheader={item.Description}
@@ -52,8 +56,8 @@ function Banner(props) {
                     title={item.Name}
                     style={{minHeight:350, minWdith:350}}
                 >
-                </CardMedia>                
-
+                </CardMedia> 
+                </Card>
             </Grid>
         )
 
@@ -69,11 +73,9 @@ function Banner(props) {
     }
 
     return (
-        <Card raised className="Banner">
-            <Grid container spacing={0} className="BannerGrid">
+            <Grid container spacing={2} className="BannerGrid">
                 {items}
             </Grid>
-        </Card>
     )
 }
 
@@ -214,20 +216,20 @@ class BannerExample extends React.Component {
                         <Checkbox onChange={this.toggleIndicators} checked={this.state.indicators} value="indicators"
                             color="primary" />
                     }
-                    label="Indicators"
+                    label="Bottom dot indicators"
                 />
                 <FormControlLabel
                     control={
                         <Checkbox onChange={this.toggleNavButtonsAlwaysVisible} checked={this.state.navButtonsAlwaysVisible} value="NavButtonsAlwaysVisible" color="primary" />
                     }
-                    label="NavButtonsAlwaysVisible"
+                    label="Nav Buttons Always Visible"
                 />
 
                 <FormControlLabel
                     control={
                         <Checkbox onChange={this.toggleNavButtonsAlwaysInvisible} checked={this.state.navButtonsAlwaysInvisible} value="NavButtonsAlwaysInvisible" color="primary" />
                     }
-                    label="NavButtonsAlwaysInvisible"
+                    label="Nav Buttons Always Invisible"
                 />
                 <FormControlLabel
                     control={
