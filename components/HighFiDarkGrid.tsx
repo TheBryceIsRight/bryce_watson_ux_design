@@ -9,7 +9,7 @@ import { Media, MediaContextProvider } from "../utils/media";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 345,
+        maxWidth: 340,
     },
     media: {
       paddingTop: '56.25%', // 16:9

@@ -100,6 +100,7 @@ function DevPortal() {
                     alt="Device mockup for system outage website"
                     width={1325}
                     height={1028}
+                    className="Preview"
                     />
             </Grid>
             <Grid item>
@@ -196,6 +197,7 @@ function DevPortal() {
                     alt="User Journey for the Developer Portal"
                     width={1325}
                     height={1078}
+                    className="Preview"
                     />
             </Grid>
             <Grid item>
@@ -217,6 +219,7 @@ function DevPortal() {
                     alt="Colors and typography for the Developer Portal"
                     width={1325}
                     height={1078}
+                    className="Preview"
                     />
             </Grid>
             <Grid item>
@@ -227,8 +230,9 @@ function DevPortal() {
                 <Image
                     src="/style_guide_02.svg"
                     alt="Colors and typography for the Developer Portal"
-                    width={1325}
-                    height={1078}
+                    width={1161}
+                    height={977}
+                    className="Preview"
                     />
             </Grid>
             <Grid item>
@@ -250,6 +254,7 @@ function DevPortal() {
                     alt="User Journey for the Developer Portal"
                     width={1110}
                     height={833.51}
+                    className="Preview"
                     />
             </Grid>
             <Grid item>

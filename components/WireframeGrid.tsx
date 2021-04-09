@@ -8,7 +8,7 @@ import { Media, MediaContextProvider } from "../utils/media";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 345,
+        maxWidth: 340,
     },
     media: {
       paddingTop: '56.25%', // 16:9
@@ -175,7 +175,7 @@ function Item(props:any)
             className="Media"
             image={props.item.filepath}
             title={props.item.name}
-            style={{height:(props.item.height)/4.20, width:(props.item.width)/4.20}}
+            style={{height:(props.item.height)/4.15, width:(props.item.width)/4.20}}
         >
             <CardContent>
             </CardContent>
