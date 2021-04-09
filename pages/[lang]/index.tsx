@@ -84,9 +84,10 @@ function Home() {
                         <Typography variant='body2'>Helping developers understand our systems</Typography>
                       </Grid>
                       <Grid item>
-                        <ButtonBase >
+                        <ButtonBase  style={{ borderRadius: 4 }}>
                         <Link href="/[lang]/dev_documentation" as={`/${locale}/dev_documentation`} passHref >
                           <Image
+                          className="Preview"
                           src="/Thumbnail1.png"
                           alt="Device mockup for developer documentation website"
                           width={imageSize}
@@ -108,8 +109,9 @@ function Home() {
                       <Typography variant='body2'>Monitoring critical infrastructure for transparency</Typography>
                     </Grid>
                     <Grid item>
-                      <ButtonBase>
+                      <ButtonBase style={{ borderRadius: 4 }}>
                         <Image
+                        className="Preview"
                         src="/Thumbnail2.png"
                         alt="Device mockup for system outage website"
                         width={imageSize}
@@ -133,8 +135,9 @@ function Home() {
                         <Typography variant='body2' style={{maxWidth:300}}>Monitoring air quality for the CDC</Typography>
                       </Grid>
                       <Grid item>
-                        <ButtonBase>
+                        <ButtonBase style={{ borderRadius: 4 }}>
                           <Image
+                          className="Preview"
                           src="/Thumbnail3.png"
                           alt="Device mockup for air pollution tracker"
                           width={imageSize}
@@ -156,12 +159,14 @@ function Home() {
                       <Typography variant='body2'>Tracking API maturity across an organization</Typography>
                     </Grid>
                     <Grid item>
-                      <ButtonBase>
+                      <ButtonBase style={{ borderRadius: 4 }}>
                         <Image
+                        className="Preview"
                         src="/Thumbnail4.png"
                         alt="Device mockup for API Strategy website"
                         width={imageSize}
                         height={imageSize}
+                        
                       />
                       </ButtonBase>
                     </Grid>

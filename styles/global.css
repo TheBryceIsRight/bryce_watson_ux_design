@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+.Preview {
+  border-radius: 4px;
+}
+
 .mapboxgl-popup-tip {
   border-top-color: #1A1B36;
 }
