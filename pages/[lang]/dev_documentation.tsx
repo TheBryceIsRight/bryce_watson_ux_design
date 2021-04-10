@@ -17,7 +17,6 @@ import HighFidelityGrid from "../../components/HighFidelityGrid";
 import HighFiDarkGrid from "../../components/HighFiDarkGrid";
 import BackToTop from "../../components/BackToTop";
 import Carousel from "../../components/Carousel";
-import YoutubeEmbed from "../../components/YoutubeEmbed";
 
 
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
@@ -349,7 +348,34 @@ function DevPortal() {
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Animations</Typography>
             </Grid>
             <Grid item>
-                <YoutubeEmbed embedID="DZyMV6V0Exk"/>
+                <div style={{borderRadius: 4, width: "100%", height:630, overflow: "hidden"}}>
+                    <iframe 
+                        width="100%" 
+                        height={630}
+                        src="https://www.youtube.com/embed/DZyMV6V0Exk" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen>
+                    </iframe>
+                </div>
+            </Grid>
+            <Grid item>
+            <Box style={{minHeight: boxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+                <div style={{borderRadius: 4, width: "100%", height:630, overflow: "hidden"}}>
+                    <iframe 
+                        width="100%" 
+                        height={630}
+                        src="https://www.youtube.com/embed/aK-3Fwy9m-Y"
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen>
+                    </iframe>
+                </div>
             </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
