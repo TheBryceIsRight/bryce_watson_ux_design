@@ -1,6 +1,6 @@
 import React from 'react';
 import { getInitialLocale } from '../translations/getInitialLocale';
-import App from '../components/App/App';
+import App from "../components/App/App";
 
 
 const Index: React.FC = () => {

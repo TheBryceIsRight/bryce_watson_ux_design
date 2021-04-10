@@ -14,11 +14,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import useTranslation from '../../hooks/useTranslation';
 import Link from 'next/link';
 import BackToTop from "../../components/BackToTop";
-
-
-
-
-
+   
 // eslint-disable-next-line @typescript-eslint/interface-name-prefix
 {/*
 interface IIndexProps {
@@ -44,6 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function Home() {
 
   const classes = useStyles();
+
   const imageSize = 310;
   const leftColumnWidth = 300;
   const { locale } = useTranslation();
@@ -92,8 +89,10 @@ function Home() {
                           alt="Device mockup for developer documentation website"
                           width={imageSize}
                           height={imageSize}
-                        /></Link>
+                          />
+                        </Link>
                         </ButtonBase>
+
                       </Grid>
                     </Grid>
                   </Grid>
