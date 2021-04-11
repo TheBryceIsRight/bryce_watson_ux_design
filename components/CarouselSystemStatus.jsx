@@ -114,8 +114,8 @@ function Project(props) {
                         <Image
                         src={item.Image}
                         alt="Persona"
-                        width={800}
-                        height={700}
+                        width={842}
+                        height={595}
                         />
                     </DialogContent>
                     <DialogActions>

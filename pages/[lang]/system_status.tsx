@@ -13,6 +13,7 @@ import Image from 'next/image'
 // import ButtonBase from '@material-ui/core/ButtonBase';
 // import useTranslation from '../../hooks/useTranslation';
 import WireframeGrid from '../../components/WireframeGridSS';
+import HighFidelityGrid from '../../components/HighFidelityGridSS';
 import BackToTop from "../../components/BackToTop";
 import Carousel from "../../components/CarouselSystemStatus";
 
@@ -250,8 +251,25 @@ function SystemStatus() {
                 </Box>  
             </Grid>
 
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>High Fidelity Wireframes</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <HighFidelityGrid></HighFidelityGrid>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+
             {/* Figma iframe */}
-            
+
             {/* <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mockups</Typography>
             </Grid>
