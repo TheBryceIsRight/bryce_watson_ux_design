@@ -1,26 +1,9 @@
-# simple-i18n-example
+# Bryce's Portfolio
 
-This is a simple example of a multilingual site implemented in [Next.js](https://nextjs.org/) using [dynamic routing](https://nextjs.org/docs#dynamic-routing) created by Bryce Watson.
+This is Bryce Watson's portfolio, currently a work in progress.
 
-# Features
+# Architecture
 
-- language subpaths
-- client and server rendered
-- seo friendly
-- automatic language detection
-- ability to save user language preference
-- translations
-- written in TypeScript
-- uses only basic Next.js and React APIs (no custom server required, etc.)
+The site is based on Next.js v10 & Material UI React. It is deployed to the Vercel cloud as its backend. It's running a custom internationalization package that uses Next dyamic routing to reload pages based on language preferences. Nivo is also used for data visualization.
 
-<<<<<<< HEAD
-# Demo
 
-Working site can be viewed [here](https://simple-i18n-example.fwojciec.now.sh).
-
-# Blog post
-
-This is a companion repo to a blog post which can be found [here](https://w11i.me/how-to-build-multilingual-website-in-next-js).
-# ss-i18n
-=======
->>>>>>> 2316ac4113cc2b24cbe771275123580bdbdc20b9
