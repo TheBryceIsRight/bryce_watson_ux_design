@@ -60,9 +60,6 @@ const App: React.FC = () => {
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
-                        <Skeleton variant="text" width={textSize}></Skeleton>
-                      </Grid>
-                      <Grid item>
                         <Skeleton variant='text' width={textSize} height={headingHeight}></Skeleton>
                       </Grid>
                       <Grid item>
@@ -76,9 +73,6 @@ const App: React.FC = () => {
                   </Grid>
                   <Grid item>
                   <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
-                    <Grid item>
-                      <Skeleton variant="text" width={textSize}></Skeleton>
-                    </Grid>
                     <Grid item>
                       <Skeleton variant='text' width={textSize} height={headingHeight}></Skeleton>
                     </Grid>
@@ -96,9 +90,6 @@ const App: React.FC = () => {
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
-                        <Skeleton variant="text" width={textSize}></Skeleton>
-                      </Grid>
-                      <Grid item>
                         <Skeleton variant='text' width={textSize} height={headingHeight}></Skeleton>
                       </Grid>
                       <Grid item>
@@ -112,9 +103,6 @@ const App: React.FC = () => {
                   </Grid>
                   <Grid item>
                   <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
-                    <Grid item>
-                      <Skeleton variant="text" width={textSize}></Skeleton>
-                    </Grid>
                     <Grid item>
                       <Skeleton variant="text" width={textSize} height={headingHeight}></Skeleton>
                     </Grid>

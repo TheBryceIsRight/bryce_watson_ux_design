@@ -101,6 +101,7 @@ function SystemStatus() {
                     width={1440}
                     height={1381}
                     className="Preview"
+                    priority={true}
                     />
             </Grid>
             <Grid item>
@@ -223,8 +224,8 @@ function SystemStatus() {
                 <Image
                     src="/style_guide_03.svg"
                     alt="Colors and typography for System Status"
-                    width={1325}
-                    height={1078}
+                    width={1161}
+                    height={926}
                     className="Preview"
                     />
             </Grid>

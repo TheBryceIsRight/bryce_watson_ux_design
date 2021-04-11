@@ -102,6 +102,7 @@ function DevPortal() {
                     width={1325}
                     height={1028}
                     className="Preview"
+                    priority={true}
                     />
             </Grid>
             <Grid item>
