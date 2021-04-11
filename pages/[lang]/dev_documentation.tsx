@@ -208,6 +208,25 @@ function DevPortal() {
                 </Box>  
             </Grid>
             <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Site Map</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}/>
+            </Grid>
+            <Grid item>
+            <Image
+                    src="/site_map_01.svg"
+                    alt="User Journey for the Developer Portal"
+                    width={1980}
+                    height={2097}
+                    className="Preview"
+                    />
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Style Guide</Typography>
             </Grid>
             <Grid item>
@@ -288,6 +307,50 @@ function DevPortal() {
             <Grid item>
                 <WireframeGrid></WireframeGrid>
             </Grid>
+
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>More Research</Typography>
+            </Grid>
+            <Grid item>
+            <Box style={{minHeight: smallerBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+                <Typography variant="body1" style={{maxWidth:maxWidthText}}>After spending the month I arried on the project cleaning up the landing and product pages, the overall experience clearly benefited.</Typography>
+                <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>Some quotes from our testers:</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>&ldquo;Documentation is something that I really value a lot, I appreciate companies that provide really good documentation. From what I&quot;ve seen today, the the documentation is really good. It explains what has been done, when, why, with examples, with requests, and responses, has some graphics.&rdquo;</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>When asked if using the site made the user trust the company more:</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+            <Typography variant="body1" style={{maxWidth:maxWidthText}}>&ldquo;Trust has increased, definitely. Quite a lot of work was clearly done here.&rdquo;</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
+            <Grid item>
+            <Typography variant="h6" style={{maxWidth:maxWidthText}}>Net Promoter Score went from -40% to +20% after a month of work.</Typography>
+            <Box style={{minHeight: vSmallBoxHeight}}>
+                </Box>
+            </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
                 </Box>
@@ -326,28 +389,13 @@ function DevPortal() {
                 <Box style={{minHeight: boxHeight}}>
                 </Box>  
             </Grid>
-            <Grid item>
-            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mockups</Typography>
-            </Grid>
-            <Grid item>
-                <Box style={{minHeight: smallerBoxHeight}}>
-                </Box>  
-            </Grid>
-            <Grid item>
-                <div style={{borderRadius: 4, width: "100%", height:700, overflow: "hidden"}}>
-                <iframe title="iPhone 8 Dev Portal Mockup" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOT5w89thotQdKVT5D02guR%2FPortfolio%3Fnode-id%3D33%253A2050%26viewport%3D1133%252C1457%252C0.475723534822464%26scaling%3Dscale-down%26page-id%3D33%253A2049" allowFullScreen></iframe>
-                </div>
-            </Grid>
-            <Grid item>
-                <Box style={{minHeight: boxHeight}}>
-                </Box>
-                <Box style={{minHeight: boxHeight}}>
-                </Box>  
-            </Grid>
+
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Animations</Typography>
             </Grid>
             <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box>
                 <div style={{borderRadius: 4, width: "100%", height:630, overflow: "hidden"}}>
                     <iframe 
                         width="100%" 
@@ -383,6 +431,26 @@ function DevPortal() {
                 <Box style={{minHeight: boxHeight}}>
                 </Box>  
             </Grid>
+
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mockups</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+                <div style={{borderRadius: 4, width: "100%", height:700, overflow: "hidden"}}>
+                <iframe title="iPhone 8 Dev Portal Mockup" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOT5w89thotQdKVT5D02guR%2FPortfolio%3Fnode-id%3D33%253A2050%26viewport%3D1133%252C1457%252C0.475723534822464%26scaling%3Dscale-down%26page-id%3D33%253A2049" allowFullScreen></iframe>
+                </div>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            
 
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Takeaways</Typography>
