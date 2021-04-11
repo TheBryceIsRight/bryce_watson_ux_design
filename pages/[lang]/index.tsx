@@ -68,7 +68,7 @@ function Home() {
               <Typography variant="h4" style={{minWidth:leftColumnWidth}}>My Projects</Typography>
             </Grid>
             <Grid item style={{maxWidth:"700px"}}>
-              <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} > 
+              <Grid container spacing={5} direction='row' alignItems='flex-start' justify='center' className={classes.root} > 
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
@@ -118,7 +118,7 @@ function Home() {
                   </Grid>
                 </Grid>
                 <Grid item>
-              <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} > 
+              <Grid container spacing={5} direction='row' alignItems='flex-start' justify='center' className={classes.root} > 
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
