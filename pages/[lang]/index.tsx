@@ -109,6 +109,8 @@ function Home() {
                     </Grid>
                     <Grid item>
                       <ButtonBase style={{ borderRadius: 4 }}>
+                      <Link href="/[lang]/system_status" as={`/${locale}/system_status`} passHref >
+
                         <Image
                         className="Preview"
                         src="/Thumbnail2.png"
@@ -116,6 +118,7 @@ function Home() {
                         width={imageSize}
                         height={imageSize}
                       />
+                      </Link>
                       </ButtonBase>
                     </Grid>
                   </Grid>
