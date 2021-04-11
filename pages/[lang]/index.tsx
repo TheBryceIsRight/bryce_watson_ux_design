@@ -72,9 +72,6 @@ function Home() {
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
-                        <Typography variant="subtitle1">UX Design, UX Research</Typography>
-                      </Grid>
-                      <Grid item>
                         <Typography variant='h5'>Developer Portal</Typography>
                       </Grid>
                       <Grid item>
@@ -98,9 +95,6 @@ function Home() {
                   </Grid>
                   <Grid item>
                   <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
-                    <Grid item>
-                      <Typography variant="subtitle1">UX Design, UX Research, FE Dev</Typography>
-                    </Grid>
                     <Grid item>
                       <Typography variant='h5'>System Outages</Typography>
                     </Grid>
@@ -128,9 +122,6 @@ function Home() {
                   <Grid item>
                     <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                       <Grid item>
-                        <Typography variant="subtitle1">UX Design, Front End Development</Typography>
-                      </Grid>
-                      <Grid item>
                         <Typography variant='h5'>Air Quality Monitoring</Typography>
                       </Grid>
                       <Grid item>
@@ -151,9 +142,6 @@ function Home() {
                   </Grid>
                   <Grid item>
                   <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
-                    <Grid item>
-                      <Typography variant="subtitle1">UX/UI Design</Typography>
-                    </Grid>
                     <Grid item>
                       <Typography variant='h5'>API Strategy</Typography>
                     </Grid>
