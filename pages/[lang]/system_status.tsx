@@ -59,14 +59,14 @@ function SystemStatus() {
     return <React.Fragment>
       <Head>
         <title>
-        Dev Portal
+        System Status
         </title>
       </Head>
       <MediaContextProvider>
       <BackToTop/>
       <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>
-              <Typography variant="h4" style={{maxWidth:leftColumnWidth}}>Developer Documentation Redesign</Typography>
+              <Typography variant="h4" style={{maxWidth:leftColumnWidth}}>Tracking System Outages</Typography>
             </Grid>
             <Grid item>
             
