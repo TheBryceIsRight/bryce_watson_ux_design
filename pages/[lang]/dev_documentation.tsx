@@ -434,7 +434,7 @@ function DevPortal() {
             </Grid>
 
             <Grid item>
-            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mockups</Typography>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Mobile Prototype</Typography>
             </Grid>
             <Grid item>
                 <Box style={{minHeight: smallerBoxHeight}}>
