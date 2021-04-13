@@ -25,8 +25,8 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-import Image from 'next/image'
-
+import Image from 'next/image';
+import Slide from '@material-ui/core/Slide';
 
 const styles = (theme) => ({
     root: {
@@ -40,6 +40,12 @@ const styles = (theme) => ({
       color: theme.palette.grey[500],
     },
   });
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+  
+
 
   const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
@@ -106,7 +112,7 @@ function Project(props) {
                 >
                 </CardMedia>
                 </CardActionArea>
-                <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+                <Dialog fullScreen onClose={handleClose} aria-labelledby="customized-dialog-title" TransitionComponent={Transition} open={open}>
                     <DialogTitle id="customized-dialog-title" onClose={handleClose}>
                         {item.Name}
                     </DialogTitle>
@@ -114,8 +120,8 @@ function Project(props) {
                         <Image
                         src={item.Image}
                         alt="Persona"
-                        width={842}
-                        height={595}
+                        height={1785}
+                        width={2526}
                         />
                     </DialogContent>
                     <DialogActions>

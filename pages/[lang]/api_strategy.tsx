@@ -105,6 +105,12 @@ function SystemStatus() {
                     />
             </Grid>
             <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>How should we organize our APIs so that they can grow and mature?</Typography>
             </Grid>
             <Grid item>
