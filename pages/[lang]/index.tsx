@@ -119,27 +119,7 @@ function Home() {
                 </Grid>
                 <Grid item>
               <Grid container spacing={5} direction='row' alignItems='flex-start' justify='center' className={classes.root} > 
-                  <Grid item>
-                    <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
-                      <Grid item>
-                        <Typography variant='h5'>Air Quality Monitoring</Typography>
-                      </Grid>
-                      <Grid item>
-                        <Typography variant='body2' style={{maxWidth:300}}>Monitoring air quality for the CDC</Typography>
-                      </Grid>
-                      <Grid item>
-                        <ButtonBase style={{ borderRadius: 4 }}>
-                          <Image
-                          className="Preview"
-                          src="/Thumbnail3.png"
-                          alt="Device mockup for air pollution tracker"
-                          width={imageSize}
-                          height={imageSize}
-                        />
-                        </ButtonBase>
-                      </Grid>
-                    </Grid>
-                  </Grid>
+                  
                   <Grid item>
                   <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
                     <Grid item>
@@ -164,6 +144,29 @@ function Home() {
                     </Grid>
                   </Grid>
                 </Grid>
+                <Grid item>
+                    <Grid container spacing={1} direction='column' alignItems='flex-start' justify='flex-start' className={classes.root} >
+                      <Grid item>
+                        <Typography variant='h5'>Air Quality Monitoring</Typography>
+                      </Grid>
+                      <Grid item>
+                        <Typography variant='body2' style={{maxWidth:300}}>Monitoring air quality for the CDC</Typography>
+                      </Grid>
+                      <Grid item>
+                        <ButtonBase style={{ borderRadius: 4 }}>
+                        <Link href="/[lang]/air_pollution" as={`/${locale}/air_pollution`} passHref >
+                          <Image
+                          className="Preview"
+                          src="/Thumbnail3.png"
+                          alt="Device mockup for air pollution tracker"
+                          width={imageSize}
+                          height={imageSize}
+                        />
+                        </Link>
+                        </ButtonBase>
+                      </Grid>
+                    </Grid>
+                  </Grid>
               </Grid>
             </Grid>
               </Grid>
