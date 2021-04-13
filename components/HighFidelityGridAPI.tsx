@@ -102,7 +102,7 @@ export default function HighFidelityGrid(_props:any)
         </Media>
 
         <Media at='xl'>
-        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:1800}}>
+        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:1800}} alignItems="center">
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -111,7 +111,7 @@ export default function HighFidelityGrid(_props:any)
 
 
         <Media greaterThanOrEqual='el'>
-        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:1600}}>
+        <Grid container direction="column" spacing={4} className="BannerGrid" style={{maxHeight:1600}} alignItems="center">
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }

@@ -99,7 +99,7 @@ function SystemStatus() {
                     src="/api_strategy_01.png"
                     alt="Device mockup for api strategy website"
                     width={1440}
-                    height={823}
+                    height={949}
                     className="Preview"
                     priority={true}
                     />
