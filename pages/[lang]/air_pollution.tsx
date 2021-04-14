@@ -145,7 +145,7 @@ function SystemStatus() {
                 </Box> 
             </Grid>
             <Grid item>
-            <Typography variant="h4" style={{maxWidth:maxWidthText}}>Modern look and feel</Typography>
+            <Typography variant="h4" style={{maxWidth:maxWidthText}}>Minimalism in design</Typography>
             </Grid>
             <Grid item>
                 <Box style={{minHeight: vSmallBoxHeight}}>
@@ -167,6 +167,74 @@ function SystemStatus() {
             </Grid>
             <Grid item>
             <Typography variant="body1" style={{maxWidth:maxWidthText}}>This prototype was meant to be built upon by CDC developers. We followed all best practices, commented our code well, and thoroughly documented everything so that hand-off went smoothly. </Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Initial Sketch</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <Image
+                    src="/low_fi_17.svg"
+                    alt="Low Fidelity mockup for air pollution visualization website"
+                    width={1440}
+                    height={1873}
+                    className="Preview"
+                    />
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Final Prototype</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <Image
+                    src="/hifi_19.png"
+                    alt="Final prototype for air pollution visualization website"
+                    width={1439}
+                    height={1567}
+                    className="Preview"
+                    />
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Tablet Mockup</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <div style={{borderRadius: 4, width: "100%", height:1000, overflow: "hidden"}}>                
+                <iframe title="Air pollution visualization on tablet" width="100%" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOT5w89thotQdKVT5D02guR%2FPortfolio%3Fnode-id%3D192%253A2723%26viewport%3D663%252C421%252C0.26979386806488037%26scaling%3Dscale-down%26page-id%3D192%253A2509" allowFullScreen></iframe>
+                </div>
             </Grid>
             <Grid item>
                 <Box style={{minHeight: boxHeight}}>
