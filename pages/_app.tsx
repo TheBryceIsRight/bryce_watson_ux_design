@@ -55,8 +55,6 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import ThreeDRotationIcon from '@material-ui/icons/ThreeDRotation';
 import Status from "../components/Status";
 import NewFooter from "../components/portfolioFooter";
-import Image from 'next/image'
-
 
 
 
