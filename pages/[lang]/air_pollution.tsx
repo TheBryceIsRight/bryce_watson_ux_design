@@ -175,6 +175,34 @@ function SystemStatus() {
                 </Box>  
             </Grid>
             <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" style={{maxWidth:maxWidthText}}>Site map</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box> 
+            </Grid>
+            <Grid item>
+                <Image
+                    src="/site_map_04.svg"
+                    alt="Site map for air pollution visualization website"
+                    width={1607}
+                    height={953}
+                    className="Preview"
+                    />
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Initial Sketch</Typography>
             </Grid>
             <Grid item>
