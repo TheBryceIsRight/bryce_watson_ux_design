@@ -95,7 +95,7 @@ function AboutMe() {
 
             </Grid>
             <Grid item>
-            <Typography variant="h5" style={{maxWidth:"700px"}}>In my free time I making pottery, riding my bicycle around Atlanta, and reading books like <Link href="https://www.wikiwand.com/en/The_Kingkiller_Chronicle">The Kingkiller Chronicles.</Link></Typography>
+            <Typography variant="h5" style={{maxWidth:"700px"}}>In my free time I making pottery, riding my bicycle around Atlanta, and reading books like <b>The Kingkiller Chronicles.</b></Typography>
 
             </Grid>
             <Grid item>

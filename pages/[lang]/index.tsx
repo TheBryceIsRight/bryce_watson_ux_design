@@ -53,6 +53,18 @@ function Home() {
         <title>
         Bryce Watson&apos;s Portfolio
         </title>
+        <meta property="og:url" content="https://bryce-watson-ux-design.vercel.app/en" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Bryce Watson"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="User Experience Design Portfolio"
+        />
+        <meta property="og:image" content={"/nextjs.png"} />
       </Head>
       <BackToTop/>
       <MediaContextProvider>
