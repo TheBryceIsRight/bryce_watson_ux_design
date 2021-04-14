@@ -4,7 +4,7 @@ import React from 'react';
 import {
   Typography,
 } from '@material-ui/core';
-import { MediaContextProvider } from "../../utils/media";
+import { MediaContextProvider, Media } from "../../utils/media";
 import withLocale from '../../hocs/withLocale';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
@@ -68,6 +68,34 @@ function Home() {
       </Head>
       <BackToTop/>
       <MediaContextProvider>
+      <Media at='sm'>
+      <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
+            <Grid item>
+              <Typography variant="h4" style={{maxWidth:"700px"}}>Hi there! I&apos;m Bryce.</Typography>
+            </Grid>
+            <Grid item>
+            <Grid container spacing={5} direction='column' alignItems='center' justify='center' className={classes.root} >
+              <Grid item>
+              <Typography variant="h5" style={{maxWidth:"700px"}}>I&apos;m a product designer at Elavon and a graduate of the Computer Science program at Georgia Tech. </Typography>
+              </Grid>
+              <Grid item>
+              <Link href="/[lang]/about_me" as={`/${locale}/about_me`} passHref >
+              <Button
+                  variant="contained"
+                  color="secondary"
+                  startIcon={<InfoIcon />}
+              >
+                  About me
+              </Button>
+              </Link>
+              </Grid>
+            </Grid>
+
+            </Grid>
+          </Grid>
+
+      </Media>
+      <Media greaterThan="sm">
       <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >
             <Grid item>
               <Typography variant="h4" style={{minWidth:leftColumnWidth}}>Hi there! I&apos;m Bryce.</Typography>
@@ -92,6 +120,7 @@ function Home() {
 
             </Grid>
           </Grid>
+          </Media>
           <Box style={{minHeight: "100px"}}>
           </Box> 
           <Grid container spacing={5} direction='row' alignItems='flex-start' justify='flex-start' className={classes.root} >

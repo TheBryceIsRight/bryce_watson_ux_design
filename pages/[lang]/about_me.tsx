@@ -17,7 +17,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import Button from '@material-ui/core/Button';
 import Link from 'next/link';
 import useTranslation from '../../hooks/useTranslation';
-
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 
 
@@ -47,6 +47,8 @@ function AboutMe() {
 
   const classes = useStyles();
   const boxHeight = 70;
+  const smallerBoxHeight = 50;
+
   const { locale } = useTranslation();
 
 
@@ -99,30 +101,44 @@ function AboutMe() {
 
             </Grid>
             <Grid item>
-            <Box style={{minHeight: boxHeight}}>
-                </Box>
-            <Typography variant="subtitle1" style={{maxWidth:"700px"}}>Photo Credit Georgia Tech Institute Communications</Typography>
-
+                <Box style={{minHeight: boxHeight}}>
+                </Box>   
             </Grid>
             <Grid item>
-                <Box style={{minHeight: boxHeight}}>
-                </Box>
-                <Box style={{minHeight: boxHeight}}>
-                </Box>
-                <Box style={{minHeight: boxHeight}}>
+            <Link href="https://docs.google.com/document/d/1q5EcZYozlEkcZeN3akvCjNYIIHLvCxK7lU4sQmAiDog/edit?usp=sharing" passHref >
+            <Button
+                variant="contained"
+                color="primary"
+                startIcon={<InsertDriveFileIcon />}
+            >
+                Download my resume
+            </Button>
+            </Link>
+            </Grid>
+
+            <Grid item>
+                <Box style={{minHeight: smallerBoxHeight}}>
                 </Box>    
             </Grid>
             <Grid item>
             <Link href="/[lang]/" as={`/${locale}/`} passHref >
 
             <Button
-                variant="contained"
+                variant="outlined"
                 color="secondary"
                 startIcon={<ArrowBackIcon />}
             >
                 Back to the home page
             </Button>
             </Link>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Typography variant="subtitle1" style={{maxWidth:"700px"}}>Photo Credit Georgia Tech Institute Communications</Typography>
+
             </Grid>
         </Grid>
       </MediaContextProvider>
