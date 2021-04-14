@@ -150,10 +150,16 @@ export default function PortfolioFooter() {
       <Box style={{height:100}}/>
       <AppBar position="static">
         <Toolbar>
-          <CopyrightIcon className={classes.menuButton} color="inherit" aria-label="copyright"/>
-          <Typography variant="h6" className={classes.title}>{(new Date().getFullYear())} Bryce Watson</Typography>
-          <div className={classes.grow} />
+          <div className={classes.grow} >
+          </div>
           <div className={classes.sectionDesktop}>
+          <CopyrightIcon className={classes.menuButton} color="inherit" aria-label="copyright"/>
+          <Typography 
+            variant="body1" 
+            className={classes.title}>{(new Date().getFullYear())} Bryce Watson</Typography>
+          </div>
+          <div className={classes.sectionDesktop}>
+          
           <Tooltip title={"Email"}>
             <IconButton aria-label="My personal email" color="inherit">
                 <MailIcon />
@@ -181,6 +187,12 @@ export default function PortfolioFooter() {
               <AccountCircle />
             </IconButton>
             </Tooltip>
+          </div>
+          <div className={classes.sectionMobile}>
+          <CopyrightIcon className={classes.menuButton} color="inherit" aria-label="copyright"/>
+          <Typography 
+              variant="body1" 
+              className={classes.title}>{(new Date().getFullYear())} Bryce Watson</Typography>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

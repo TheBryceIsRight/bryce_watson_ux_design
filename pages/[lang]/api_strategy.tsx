@@ -15,6 +15,10 @@ import Image from 'next/image'
 import BackToTop from "../../components/BackToTop";
 import Carousel from "../../components/CarouselAPIStrategy";
 import HighFidelityGrid from '../../components/HighFidelityGridAPI';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Button from '@material-ui/core/Button';
+import Link from 'next/link';
+import useTranslation from '../../hooks/useTranslation';
 
 
 
@@ -50,6 +54,8 @@ function SystemStatus() {
   const boxHeight = 70;
   const smallerBoxHeight = 50;
   const vSmallBoxHeight = 15;
+
+  const { locale } = useTranslation();
 
   /*
   const { locale } = useTranslation();
@@ -330,6 +336,24 @@ function SystemStatus() {
             </Grid>
             <Grid item>
             <Typography variant="h3" style={{maxWidth:maxWidthText}}>Thank you for your time!</Typography>
+            </Grid>
+            <Grid item>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>
+                <Box style={{minHeight: boxHeight}}>
+                </Box>  
+            </Grid>
+            <Grid item>
+            <Link href="/[lang]/" as={`/${locale}/`} passHref >
+
+            <Button
+                variant="contained"
+                color="secondary"
+                startIcon={<ArrowBackIcon />}
+            >
+                Back to the home page
+            </Button>
+            </Link>
             </Grid>
             
       </MediaContextProvider>

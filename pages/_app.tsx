@@ -28,7 +28,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert'; 
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import ListSubheader from '@material-ui/core/ListSubheader';
@@ -41,7 +40,7 @@ import LoyaltyIcon from '@material-ui/icons/Loyalty';
 import MessageIcon from '@material-ui/icons/Message';
 import useTranslation from '../hooks/useTranslation';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
-import Brightness3Icon from '@material-ui/icons/Brightness3';
+import Brightness2Icon from '@material-ui/icons/Brightness2';
 import ThemeContext from '../components/Theme';
 import { useRouter } from 'next/router';
 import { locales, languageNames } from '../translations/config';
@@ -56,6 +55,8 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import ThreeDRotationIcon from '@material-ui/icons/ThreeDRotation';
 import Status from "../components/Status";
 import NewFooter from "../components/portfolioFooter";
+import Image from 'next/image'
+
 
 
 
@@ -214,10 +215,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   // const isNotificationsMenuOpen = Boolean(notificationsAnchorEl);
-
-  const handleProfileMenuOpen = (event: any) => {
-      setAnchorEl(event.currentTarget);
-  };
 
   // const handleNotificationMenuOpen = (event: any) => {
   //   setNotificationsAnchorEl(event.currentTarget);
@@ -431,13 +428,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
       >
-      <MenuItem onClick={handleProfileMenuOpen}>
-      <ListItem>
-          <ListItemIcon><AccountCircle />
-          </ListItemIcon>
-          <ListItemText primary={t("profile")} />
-      </ListItem>
-      </MenuItem>
       <MenuItem>
       <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" passHref>
       <ListItem>
@@ -449,8 +439,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </MenuItem>
       <MenuItem onClick={handleThemeChange} >
       <ListItem>
-          <ListItemIcon><Brightness3Icon/>
-          </ListItemIcon>
+          <ListItemIcon><Brightness2Icon/>
+         </ListItemIcon>
           <ListItemText primary={t("dark_mode")} />
       </ListItem>
       </MenuItem>
@@ -663,7 +653,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     onClick={handleThemeChange}
                     color="primary"
                   >
-                    <Brightness3Icon />
+                    <Brightness2Icon />
                   </IconButton>
                   </Tooltip>
                 </div>
@@ -683,21 +673,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </Link>
 
                 </div>
-                
-  
-                <div className={classes.sectionDesktop}>
-                <Tooltip title={t("profile")}>
-                  <IconButton
-                      aria-label={t("profile")}
-                      aria-controls={menuId}
-                      aria-haspopup="true"
-                      onClick={handleProfileMenuOpen}
-                      color="primary"
-                    >
-                      <AccountCircle />
-                    </IconButton>
-                </Tooltip>
-                </div>
+              
                 
                 <div className={classes.sectionMobile}>
                   <IconButton
