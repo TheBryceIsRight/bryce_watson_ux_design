@@ -15,7 +15,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Tooltip from '@material-ui/core/Tooltip';
-
+import useTranslation from '../hooks/useTranslation';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -104,6 +106,8 @@ export default function PortfolioFooter() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  const { locale } = useTranslation();
+
   
 
   const mailto = "mailto:brycewatson315@gmail.com";
@@ -120,36 +124,50 @@ export default function PortfolioFooter() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
+      <Link href={mailto}>
       <MenuItem>
-      <a href={mailto}>
-        <IconButton aria-label="Personal email" color="inherit">
-            <MailIcon />
-        </IconButton>
+        <ListItemIcon>
+        <MailIcon aria-label="Mail" color="inherit"/>
+        </ListItemIcon>
+        <ListItemText>
         <Typography>Email</Typography>
-      </a>
+        </ListItemText>
       </MenuItem>
+      </Link>
+      <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" passHref>
       <MenuItem>
-        <IconButton aria-label="LinkedIn" color="inherit">
-            <LinkedInIcon />
-        </IconButton>
+        <ListItemIcon aria-label="LinkedIn" color="inherit">
+        <LinkedInIcon />
+        </ListItemIcon>
+        <ListItemText>
         <Typography>LinkedIn</Typography>
+        </ListItemText>
       </MenuItem>
+      </Link>
+      <Link href="/[lang]/" as={`/${locale}/`} passHref >
       <MenuItem>
-        <IconButton aria-label="My work" color="inherit">
-            <WorkIcon />
-        </IconButton>
+      <ListItemIcon>
+        <WorkIcon aria-label="My work" color="inherit"/>
+        </ListItemIcon>
+        <ListItemText>
         <Typography>Work</Typography>
+        </ListItemText>
       </MenuItem>
+      </Link>
+
+      <Link href="/[lang]/about_me" as={`/${locale}/about_me`} passHref >
       <MenuItem >
-        <IconButton
-          aria-label="about me"
-          aria-controls="primary-search-account-menu"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
+
+
+      <ListItemIcon>
+        <AccountCircle aria-label="about me" color="inherit"/>
+        </ListItemIcon>
+        <ListItemText>
         <Typography>About me</Typography>
+        </ListItemText>
       </MenuItem>
+      </Link>
+
     </Menu>
   );
 
@@ -182,11 +200,14 @@ export default function PortfolioFooter() {
             </IconButton>
             </Tooltip>
             </Link>
+            <Link href="/[lang]/" as={`/${locale}/`} passHref >
             <Tooltip title={"My work"}>
             <IconButton aria-label="My work" color="inherit">
                 <WorkIcon />
             </IconButton>
             </Tooltip>
+            </Link>
+            <Link href="/[lang]/about_me" as={`/${locale}/about_me`} passHref >
             <Tooltip title={"About me"}>
             <IconButton
               edge="end"
@@ -196,6 +217,7 @@ export default function PortfolioFooter() {
               <AccountCircle />
             </IconButton>
             </Tooltip>
+            </Link>
           </div>
           <div className={classes.sectionMobile}>
           <CopyrightIcon className={classes.menuButton} color="inherit" aria-label="copyright"/>
