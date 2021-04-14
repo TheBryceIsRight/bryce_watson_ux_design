@@ -87,6 +87,8 @@ createStyles({
 }),
 );
 
+
+
 export default function PortfolioFooter() {
   const classes = useStyles();
 
@@ -102,6 +104,11 @@ export default function PortfolioFooter() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  
+
+  const mailto = "mailto:brycewatson315@gmail.com";
+
+
   const mobileMenuId = 'footer-menu-mobile';
   const renderMobileMenu = (
     <Menu
@@ -114,10 +121,12 @@ export default function PortfolioFooter() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
+      <a href={mailto}>
         <IconButton aria-label="Personal email" color="inherit">
             <MailIcon />
         </IconButton>
         <Typography>Email</Typography>
+      </a>
       </MenuItem>
       <MenuItem>
         <IconButton aria-label="LinkedIn" color="inherit">

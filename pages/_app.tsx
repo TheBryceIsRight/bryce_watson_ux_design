@@ -20,7 +20,7 @@ import {
   MenuItem,
   ListItemText,
  } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import { fade } from '@material-ui/core/styles'
 
@@ -73,6 +73,7 @@ const themeContext = {
   ],
   index: 0,
 }
+
 
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -611,14 +612,14 @@ function MyApp({ Component, pageProps }: AppProps) {
             <AppBar position="static" style={{ background: 'transparent', boxShadow:'none'}}>
               <Toolbar disableGutters={true}>
                 <React.Fragment>
-                <IconButton
+                {/* <IconButton
                     className={classes.menuButton}
                     color="primary"
                     aria-label="open menu"
                     onClick={toggleDrawer('left', true)}
                     > 
                 <MenuIcon />
-                </IconButton>   
+                </IconButton>    */}
                 <Drawer 
                     anchor={'left'} 
                     open={state['left']} 
