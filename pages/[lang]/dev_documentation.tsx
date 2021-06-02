@@ -329,7 +329,7 @@ function DevPortal() {
                 </Box>
             </Grid>
             <Grid item>
-                <Typography variant="body1" style={{maxWidth:maxWidthText}}>After spending the month I arried on the project cleaning up the landing and product pages, the overall experience clearly benefited.</Typography>
+                <Typography variant="body1" style={{maxWidth:maxWidthText}}>After spending the month on the project cleaning up the landing and product pages, the overall experience clearly benefited.</Typography>
                 <Box style={{minHeight: vSmallBoxHeight}}>
                 </Box>
             </Grid>
