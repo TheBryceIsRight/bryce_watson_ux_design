@@ -122,9 +122,6 @@ function SystemStatus() {
             <Grid item>
             <Typography variant="body1" style={{maxWidth:maxWidthText}}>Created by two of my teammates Colin Jaccino and Laura Ratliff, ACME (API Channel Management &amp; Engagement) grew out of a need for us to have consistent API standards in our developer documentation. I was tasked with taking their governance body and creating an internal website that help serve its ends.</Typography>
             </Grid>
-            <Grid item>
-            <Typography variant="body1" style={{maxWidth:maxWidthText}}>The goal was to solve this issue with a single place where people would go to see if something was broken, and if they were an internal employee, what was being done to fix the issue. The working name was System Status, but it was the url I gave it that was more important: status.elavon.com. By adding status in front of our existing main website, anyone in the company could get a concise, data-driven, comprehensive look at how our systems were doing without remembering how to get there.</Typography>
-            </Grid>
           </Grid>
           <Grid item>
                 <Box style={{minHeight: boxHeight}}>
